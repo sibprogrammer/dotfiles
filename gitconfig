@@ -1,0 +1,11 @@
+[user]
+    name = Alexei Yuzhakov
+    email = sibprogrammer@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    co = checkout
+    st = status
+    br = branch
