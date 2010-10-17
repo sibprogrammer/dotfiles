@@ -18,3 +18,11 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export PATH=$PATH:~/bin
+
+function psg {
+    ps auxww | egrep "($1|%CPU)" | grep -v grep
+}
+
+function pss {
+    ps auxwwf | less
+}
