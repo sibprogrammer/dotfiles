@@ -5,7 +5,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias ls='ls --color=always'
     alias grep='grep --color=auto'
     alias egrep='egrep --color=auto'
-    alias ack-grep='ack-grep -a --color'
+    alias ack-grep='ack-grep --pager="less -Ri" -a --color'
 fi
 
 alias ll='ls -la'
