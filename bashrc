@@ -12,6 +12,7 @@ alias ll='ls -la'
 alias vi='vim'
 alias less='less -Ri'
 alias bashrc='vi ~/.bashrc && source ~/.bashrc'
+alias rsync='rsync --exclude .svn'
 
 if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
