@@ -17,6 +17,7 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
+export HISTSIZE=10000
 export PATH=$PATH:~/bin
 
 function psg {
