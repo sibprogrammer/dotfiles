@@ -3,9 +3,9 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     eval "`dircolors -b`"
     alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
+    alias grep='grep --color=always'
     alias egrep='egrep --color=auto'
-    alias ack-grep='ack-grep --pager="less -Ri" -a --color'
+    alias ack-grep='ack-grep -a --color'
 fi
 
 alias ll='ls -la'
