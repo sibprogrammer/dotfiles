@@ -22,7 +22,7 @@ export HISTSIZE=10000
 export PATH=$PATH:~/bin
 
 function psg {
-    ps auxww | egrep "($1|%CPU)" | grep -v grep
+    ps auxww | egrep --color=always "($1|%CPU)" | grep -v grep
 }
 
 function pss {
