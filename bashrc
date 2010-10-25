@@ -20,6 +20,7 @@ fi
 
 export HISTSIZE=10000
 export PATH=$PATH:~/bin
+export EDITOR=vim
 
 function psg {
     ps auxww | egrep --color=always "($1|%CPU)" | grep -v grep
