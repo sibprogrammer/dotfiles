@@ -19,7 +19,7 @@ if [ -f /etc/bash_completion ]; then
 fi
 
 export HISTSIZE=10000
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:/sbin
 export EDITOR=vim
 
 function psg {
