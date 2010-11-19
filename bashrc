@@ -14,9 +14,8 @@ alias less='less -Ri'
 alias bashrc='vi ~/.bashrc && source ~/.bashrc'
 alias rsync='rsync --exclude .svn'
 
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
+[ -f /etc/bash_completion ] && . /etc/bash_completion
+[ -f .bash_extra ] && . .bash_extra
 
 export HISTSIZE=10000
 export PATH=$PATH:~/bin:/sbin
