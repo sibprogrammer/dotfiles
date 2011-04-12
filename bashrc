@@ -8,7 +8,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias ack-grep='ack-grep -a --color'
 fi
 
-alias ll='ls -la'
+alias ll='ls -lah'
 alias vi='vim'
 alias less='less -Ri'
 alias bashrc='vi ~/.bashrc && source ~/.bashrc'
