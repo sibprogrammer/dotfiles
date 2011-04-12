@@ -18,7 +18,7 @@ alias rsync='rsync --exclude .svn'
 [ -f .bash_extra ] && . .bash_extra
 
 export HISTSIZE=10000
-export PATH=$PATH:~/bin:/sbin
+export PATH=$PATH:~/bin:/sbin:/usr/sbin
 export EDITOR=vim
 
 function psg {
