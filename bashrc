@@ -8,7 +8,7 @@ if [ "$TERM" != "dumb" ] && [ -x /usr/bin/dircolors ]; then
     alias ack-grep='ack-grep -a --color'
 fi
 
-alias ll='ls -la'
+alias ll='ls -lah'
 alias vi='vim'
 alias less='less -Ri'
 alias bashrc='vi ~/.bashrc && source ~/.bashrc'
@@ -18,7 +18,7 @@ alias rsync='rsync --exclude .svn'
 [ -f .bash_extra ] && . .bash_extra
 
 export HISTSIZE=10000
-export PATH=$PATH:~/bin:/sbin
+export PATH=$PATH:~/bin:/sbin:/usr/sbin
 export EDITOR=vim
 
 function psg {

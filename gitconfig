@@ -12,3 +12,5 @@
     ci = commit
     dh = diff HEAD
     dc = diff --cached
+[log]
+    date = local
