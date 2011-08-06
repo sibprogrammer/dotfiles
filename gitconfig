@@ -10,3 +10,5 @@
     st = status
     br = branch
     ci = commit
+    dh = diff HEAD
+    dc = diff --cached
