@@ -14,3 +14,5 @@
     dc = diff --cached
 [log]
     date = local
+[core]
+    filemode = false
