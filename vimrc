@@ -6,7 +6,7 @@ set title " reflect file name in window title
 set paste
 set ruler " show current line and column in status bar
 set laststatus=2 " make status bar always visible
-set pastetoggle=<F2>
+set pastetoggle=<F5>
 syntax on " syntax higlighting
 
 " specific behavior for different file types
@@ -15,4 +15,5 @@ autocmd BufEnter *.rb set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.erb set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.js set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.html set ai sw=2 ts=2 sta et fo=croql
-
+autocmd BufEnter *.coffee set ai sw=2 ts=2 sta et fo=croql
+autocmd BufEnter *.yml set ai sw=2 ts=2 sta et fo=croql
