@@ -5,6 +5,8 @@ set smartindent " sta - allow to delete spaces as tabs
 set title " reflect file name in window title
 set paste
 set ruler " show current line and column in status bar
+set viminfo='20,\"50 " remember last edits
+set history=50 " keep command line history
 set laststatus=2 " make status bar always visible
 set pastetoggle=<F5>
 syntax on " syntax higlighting
@@ -20,3 +22,9 @@ autocmd BufEnter *.yml set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.json set ai sw=4 ts=4 sta et fo=croql
 au BufRead,BufNewFile *.json set filetype=json
 autocmd BufEnter *.php set ai sw=4 ts=4 sta et fo=croql
+
+" restore cursor position
+autocmd BufReadPost *
+\ if line("'\"") > 0 && line ("'\"") <= line("$") |
+\   exe "normal! g'\"" |
+\ endi
