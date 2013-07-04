@@ -17,3 +17,6 @@ autocmd BufEnter *.js set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.html set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.coffee set ai sw=2 ts=2 sta et fo=croql
 autocmd BufEnter *.yml set ai sw=2 ts=2 sta et fo=croql
+autocmd BufEnter *.json set ai sw=4 ts=4 sta et fo=croql
+au BufRead,BufNewFile *.json set filetype=json
+autocmd BufEnter *.php set ai sw=4 ts=4 sta et fo=croql
